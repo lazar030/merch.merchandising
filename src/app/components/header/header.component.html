@@ -1,0 +1,127 @@
+<ion-header>
+  <nav class="show-md">
+    <div class="logo">
+      <ion-img
+        (click)="navigate('home')"
+        class="logo "
+        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAxMjggNjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDEyOCA2NDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMyAxMykiPgoJPHBhdGggc3R5bGU9ImZpbGw6I0EwQTBBMDsiIGQ9Ik0tOS41LDQ1LjN2LTkuNWgtMi40bC0yLjYsNi4zbC0yLjYtNi4zaC0yLjR2OS41aDEuN3YtNy4xbDIuOSw3LjFoMC43bDIuOS03LjF2Ny4xSC05LjV6CgkJIE0tMC40LDQ1LjN2LTEuNWgtNC44di0yLjZoNC43di0xLjVoLTQuN3YtMi41aDQuOHYtMS41aC02LjV2OS41SC0wLjR6IE05LjIsNDUuM0g3LjNsLTIuMS0zLjVIMy42djMuNUgxLjl2LTkuNWg0LjIKCQljMS45LDAsMy4xLDEuMiwzLjEsM2MwLDEuNy0xLjEsMi42LTIuMywyLjhMOS4yLDQ1LjN6IE01LjgsNDAuM2MwLjksMCwxLjYtMC42LDEuNi0xLjVzLTAuNy0xLjUtMS42LTEuNUgzLjZ2M0g1Ljh6IE0xNS45LDQ1LjUKCQljMS45LDAsMy4xLTEsMy44LTIuMWwtMS40LTAuN0MxNy45LDQzLjQsMTcsNDQsMTUuOSw0NGMtMS45LDAtMy4zLTEuNC0zLjMtMy40czEuNC0zLjQsMy4zLTMuNGMxLDAsMS45LDAuNiwyLjQsMS40bDEuNC0wLjcKCQljLTAuNy0xLjEtMS45LTIuMS0zLjgtMi4xYy0yLjgsMC01LDItNSw0LjlTMTMuMSw0NS41LDE1LjksNDUuNXogTTI5LjksNDUuM3YtOS41aC0xLjd2My45aC00Ljl2LTMuOWgtMS43djkuNWgxLjd2LTQuMWg0Ljl2NC4xCgkJSDI5Ljl6IE00MSw0NS4zaC0xLjlsLTAuNy0xLjhoLTQuNGwtMC43LDEuOGgtMS45bDMuNy05LjVoMi4xTDQxLDQ1LjN6IE0zOCw0MmwtMS43LTQuNUwzNC42LDQySDM4eiBNNTAuOSw0NS4zdi05LjVoLTEuN3Y2LjYKCQlsLTQuOS02LjZoLTEuN3Y5LjVoMS43di02LjhsNSw2LjhINTAuOXogTTU3LDQ1LjNoLTMuNXYtOS41SDU3YzMsMCw1LDIsNSw0LjhDNjEuOSw0My40LDU5LjksNDUuMyw1Nyw0NS4zeiBNNTcsNDMuOQoJCWMyLjEsMCwzLjMtMS41LDMuMy0zLjNjMC0xLjgtMS4xLTMuMy0zLjMtMy4zaC0xLjl2Ni42SDU3eiBNNjUuOCw0NS4zdi05LjVoLTEuN3Y5LjVINjUuOHogTTcxLjYsNDUuNWMyLjYsMCwzLjctMS40LDMuNy0yLjkKCQljMC0zLjUtNS41LTIuNS01LjUtNC4yYzAtMC43LDAuNi0xLjIsMS42LTEuMmMxLDAsMiwwLjMsMi44LDEuMWwxLTEuMmMtMC45LTAuOS0yLjEtMS4zLTMuNi0xLjNjLTIuMSwwLTMuNSwxLjItMy41LDIuOAoJCWMwLDMuNSw1LjUsMi4zLDUuNSw0LjNjMCwwLjYtMC41LDEuMy0xLjksMS4zYy0xLjMsMC0yLjQtMC42LTMtMS4zTDY3LjcsNDRDNjguNiw0NC45LDY5LjgsNDUuNSw3MS42LDQ1LjV6IE03OSw0NS4zdi05LjVoLTEuNwoJCXY5LjVINzl6IE04OS44LDQ1LjN2LTkuNWgtMS43djYuNmwtNC45LTYuNmgtMS43djkuNWgxLjd2LTYuOGw1LDYuOEg4OS44eiBNOTYuOSw0NS41YzEuNywwLDMtMC43LDMuOS0xLjd2LTMuNmgtNC41djEuNWgyLjh2MS41CgkJYy0wLjQsMC40LTEuMywwLjktMi4zLDAuOWMtMS45LDAtMy4zLTEuNS0zLjMtMy40czEuNC0zLjQsMy4zLTMuNGMxLjEsMCwyLDAuNiwyLjUsMS4zbDEuNC0wLjhjLTAuOC0xLjEtMi0yLTMuOC0yCgkJYy0yLjgsMC01LDEuOS01LDQuOVM5NC4yLDQ1LjUsOTYuOSw0NS41eiIvPgoJPHBhdGggZD0iTS02LjEsNC40Yy03LjYsMC0xMy4zLDUuNC0xMy4zLDEyLjZjMCw2LjksNS42LDEyLjIsMTIuNywxMi4yaDV2LTcuMWgtNC4yYy0zLjMsMC01LjctMi4yLTUuNy01LjJjMC0zLjEsMi41LTUuNSw1LjYtNS41CgkJYzMuMSwwLDUuNiwyLjYsNS42LDUuOHYxMmg3LjV2LTEyQzcuMSw5LjksMS41LDQuNC02LjEsNC40TC02LjEsNC40eiBNNjEuOCw0LjRDNTUsNC40LDUwLjIsOSw1MC4yLDE1LjN2MTMuOWg3LjV2LTE0CgkJYzAtMi4yLDEuNy0zLjcsNC4xLTMuN2MzLjQsMCw0LDIuMyw0LDMuN3YxNGg3LjVWMTUuM0M3My4zLDguNyw2OC45LDQuNCw2MS44LDQuNEw2MS44LDQuNHogTTE3LjcsNC40Yy01LDAtOC45LDMuOC04LjksOC43djE2LjEKCQloNy40di0xNWMwLTIuMSwyLjEtMy4zLDQtMy4zaDMuNFY0LjRIMTcuN0wxNy43LDQuNHogTTg3LjQsNC40QzgwLjMsNC40LDc1LDkuOCw3NSwxN2MwLDYuOSw1LjMsMTIuMiwxMiwxMi4yaDQuNXYtNy4xaC0zLjcKCQljLTMuMSwwLTUuNS0yLjItNS41LTUuMmMwLTMuMSwyLjMtNS41LDUuMy01LjVjMi45LDAsNS4yLDIuNSw1LjIsNS44djEyaDcuMXYtMTJDOTkuOCw5LjksOTQuNSw0LjQsODcuNCw0LjRMODcuNCw0LjR6IE0zNi4xLDIyLjkKCQljLTIuMywwLTQuMS0wLjgtNC45LTMuMmgxNy4xbDAuMS0wLjVjMC40LTQuNS0wLjctOC4zLTMuMy0xMWMtMi4zLTIuNC01LjUtMy43LTktMy43Yy02LjksMC0xMi41LDUuNi0xMi41LDEyLjQKCQljMCw2LjgsNS42LDEyLjQsMTIuNSwxMi40YzUuNSwwLDkuOS0yLjksMTEuNi03LjVsMC4zLTAuOGgtNy44TDQwLjIsMjFDMzkuMSwyMi4yLDM3LjYsMjIuOSwzNi4xLDIyLjl6IE0zNi4xLDEwLjgKCQljMS43LDAsMy45LDAuNiw0LjksM2gtOS42QzMyLjQsMTEuNSwzNC41LDEwLjgsMzYuMSwxMC44TDM2LjEsMTAuOHoiLz4KPC9nPgo8L3N2Zz4K"
+      ></ion-img>
+    </div>
+
+    <ul class="links ion-no-padding ion-float-left">
+      <li>
+        <a
+          (click)="navigate('about')"
+          class="sm-nav-links ion-margin-end trigger-drop trigger-drop-link"
+        >
+          About</a
+        >
+      </li>
+      <li>
+        <a
+          (click)="navigate('contact')"
+          class="sm-nav-links trigger-drop trigger-drop-link"
+        >
+          Contact</a
+        >
+      </li>
+    </ul>
+    <div class="mini-nav ion-float-right">
+      <ion-buttons class="show-md" slot="secondary">
+        <a href="tel:(855) 462-7362">
+          <i class="fal fa-phone-alt"></i>
+        </a>
+      </ion-buttons>
+      <ion-buttons class="show-md" slot="primary">
+        <ion-buttons slot="start">
+          <ion-menu-button> </ion-menu-button>
+        </ion-buttons>
+      </ion-buttons>
+    </div>
+  </nav>
+  <nav class="hide-md" id=" navigation">
+    <div class="logo">
+      <ion-img
+        (click)="navigate('home')"
+        class="logo "
+        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIyLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAxMjggNjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDEyOCA2NDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMyAxMykiPgoJPHBhdGggc3R5bGU9ImZpbGw6I0EwQTBBMDsiIGQ9Ik0tOS41LDQ1LjN2LTkuNWgtMi40bC0yLjYsNi4zbC0yLjYtNi4zaC0yLjR2OS41aDEuN3YtNy4xbDIuOSw3LjFoMC43bDIuOS03LjF2Ny4xSC05LjV6CgkJIE0tMC40LDQ1LjN2LTEuNWgtNC44di0yLjZoNC43di0xLjVoLTQuN3YtMi41aDQuOHYtMS41aC02LjV2OS41SC0wLjR6IE05LjIsNDUuM0g3LjNsLTIuMS0zLjVIMy42djMuNUgxLjl2LTkuNWg0LjIKCQljMS45LDAsMy4xLDEuMiwzLjEsM2MwLDEuNy0xLjEsMi42LTIuMywyLjhMOS4yLDQ1LjN6IE01LjgsNDAuM2MwLjksMCwxLjYtMC42LDEuNi0xLjVzLTAuNy0xLjUtMS42LTEuNUgzLjZ2M0g1Ljh6IE0xNS45LDQ1LjUKCQljMS45LDAsMy4xLTEsMy44LTIuMWwtMS40LTAuN0MxNy45LDQzLjQsMTcsNDQsMTUuOSw0NGMtMS45LDAtMy4zLTEuNC0zLjMtMy40czEuNC0zLjQsMy4zLTMuNGMxLDAsMS45LDAuNiwyLjQsMS40bDEuNC0wLjcKCQljLTAuNy0xLjEtMS45LTIuMS0zLjgtMi4xYy0yLjgsMC01LDItNSw0LjlTMTMuMSw0NS41LDE1LjksNDUuNXogTTI5LjksNDUuM3YtOS41aC0xLjd2My45aC00Ljl2LTMuOWgtMS43djkuNWgxLjd2LTQuMWg0Ljl2NC4xCgkJSDI5Ljl6IE00MSw0NS4zaC0xLjlsLTAuNy0xLjhoLTQuNGwtMC43LDEuOGgtMS45bDMuNy05LjVoMi4xTDQxLDQ1LjN6IE0zOCw0MmwtMS43LTQuNUwzNC42LDQySDM4eiBNNTAuOSw0NS4zdi05LjVoLTEuN3Y2LjYKCQlsLTQuOS02LjZoLTEuN3Y5LjVoMS43di02LjhsNSw2LjhINTAuOXogTTU3LDQ1LjNoLTMuNXYtOS41SDU3YzMsMCw1LDIsNSw0LjhDNjEuOSw0My40LDU5LjksNDUuMyw1Nyw0NS4zeiBNNTcsNDMuOQoJCWMyLjEsMCwzLjMtMS41LDMuMy0zLjNjMC0xLjgtMS4xLTMuMy0zLjMtMy4zaC0xLjl2Ni42SDU3eiBNNjUuOCw0NS4zdi05LjVoLTEuN3Y5LjVINjUuOHogTTcxLjYsNDUuNWMyLjYsMCwzLjctMS40LDMuNy0yLjkKCQljMC0zLjUtNS41LTIuNS01LjUtNC4yYzAtMC43LDAuNi0xLjIsMS42LTEuMmMxLDAsMiwwLjMsMi44LDEuMWwxLTEuMmMtMC45LTAuOS0yLjEtMS4zLTMuNi0xLjNjLTIuMSwwLTMuNSwxLjItMy41LDIuOAoJCWMwLDMuNSw1LjUsMi4zLDUuNSw0LjNjMCwwLjYtMC41LDEuMy0xLjksMS4zYy0xLjMsMC0yLjQtMC42LTMtMS4zTDY3LjcsNDRDNjguNiw0NC45LDY5LjgsNDUuNSw3MS42LDQ1LjV6IE03OSw0NS4zdi05LjVoLTEuNwoJCXY5LjVINzl6IE04OS44LDQ1LjN2LTkuNWgtMS43djYuNmwtNC45LTYuNmgtMS43djkuNWgxLjd2LTYuOGw1LDYuOEg4OS44eiBNOTYuOSw0NS41YzEuNywwLDMtMC43LDMuOS0xLjd2LTMuNmgtNC41djEuNWgyLjh2MS41CgkJYy0wLjQsMC40LTEuMywwLjktMi4zLDAuOWMtMS45LDAtMy4zLTEuNS0zLjMtMy40czEuNC0zLjQsMy4zLTMuNGMxLjEsMCwyLDAuNiwyLjUsMS4zbDEuNC0wLjhjLTAuOC0xLjEtMi0yLTMuOC0yCgkJYy0yLjgsMC01LDEuOS01LDQuOVM5NC4yLDQ1LjUsOTYuOSw0NS41eiIvPgoJPHBhdGggZD0iTS02LjEsNC40Yy03LjYsMC0xMy4zLDUuNC0xMy4zLDEyLjZjMCw2LjksNS42LDEyLjIsMTIuNywxMi4yaDV2LTcuMWgtNC4yYy0zLjMsMC01LjctMi4yLTUuNy01LjJjMC0zLjEsMi41LTUuNSw1LjYtNS41CgkJYzMuMSwwLDUuNiwyLjYsNS42LDUuOHYxMmg3LjV2LTEyQzcuMSw5LjksMS41LDQuNC02LjEsNC40TC02LjEsNC40eiBNNjEuOCw0LjRDNTUsNC40LDUwLjIsOSw1MC4yLDE1LjN2MTMuOWg3LjV2LTE0CgkJYzAtMi4yLDEuNy0zLjcsNC4xLTMuN2MzLjQsMCw0LDIuMyw0LDMuN3YxNGg3LjVWMTUuM0M3My4zLDguNyw2OC45LDQuNCw2MS44LDQuNEw2MS44LDQuNHogTTE3LjcsNC40Yy01LDAtOC45LDMuOC04LjksOC43djE2LjEKCQloNy40di0xNWMwLTIuMSwyLjEtMy4zLDQtMy4zaDMuNFY0LjRIMTcuN0wxNy43LDQuNHogTTg3LjQsNC40QzgwLjMsNC40LDc1LDkuOCw3NSwxN2MwLDYuOSw1LjMsMTIuMiwxMiwxMi4yaDQuNXYtNy4xaC0zLjcKCQljLTMuMSwwLTUuNS0yLjItNS41LTUuMmMwLTMuMSwyLjMtNS41LDUuMy01LjVjMi45LDAsNS4yLDIuNSw1LjIsNS44djEyaDcuMXYtMTJDOTkuOCw5LjksOTQuNSw0LjQsODcuNCw0LjRMODcuNCw0LjR6IE0zNi4xLDIyLjkKCQljLTIuMywwLTQuMS0wLjgtNC45LTMuMmgxNy4xbDAuMS0wLjVjMC40LTQuNS0wLjctOC4zLTMuMy0xMWMtMi4zLTIuNC01LjUtMy43LTktMy43Yy02LjksMC0xMi41LDUuNi0xMi41LDEyLjQKCQljMCw2LjgsNS42LDEyLjQsMTIuNSwxMi40YzUuNSwwLDkuOS0yLjksMTEuNi03LjVsMC4zLTAuOGgtNy44TDQwLjIsMjFDMzkuMSwyMi4yLDM3LjYsMjIuOSwzNi4xLDIyLjl6IE0zNi4xLDEwLjgKCQljMS43LDAsMy45LDAuNiw0LjksM2gtOS42QzMyLjQsMTEuNSwzNC41LDEwLjgsMzYuMSwxMC44TDM2LjEsMTAuOHoiLz4KPC9nPgo8L3N2Zz4K"
+      ></ion-img>
+    </div>
+    <ul class="links ion-no-padding ion-float-left">
+      <li>
+        <a
+          (click)="navigate('about')"
+          class="nav-links ion-margin-end trigger-drop trigger-drop-link"
+        >
+          About</a
+        >
+      </li>
+      <li>
+        <a
+          (click)="navigate('contact')"
+          class="nav-links trigger-drop trigger-drop-link"
+        >
+          Contact</a
+        >
+      </li>
+    </ul>
+    <ul class="links">
+      <li>
+        <a
+          href="https://arenaembroidery.com/"
+          target="_blank"
+          class="trigger-drop trigger-drop-54b9a9"
+        >
+          <ion-icon
+            class="icon-img"
+            src="../../../assets/icons/Embroidery.svg"
+          ></ion-icon>
+
+          <span class="arena-text">Arena </span>Embroidery</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://shop.arenaprints.com/"
+          target="_blank"
+          class="trigger-drop trigger-drop-eda346"
+          ><ion-icon
+            class="yellow icon-img"
+            src="../../../assets/icons/SB.svg"
+          ></ion-icon>
+          <span class="arena-text">Arena </span>Screen Burning</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://arenaprints.com/"
+          target="_blank"
+          class="trigger-drop trigger-drop-6693e0"
+          ><ion-icon
+            class="icon-img"
+            src="../../../assets/icons/PrintingOrder.svg"
+          ></ion-icon>
+          <span class="arena-text">Arena </span>Prints</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://arenasewing.com/"
+          target="_blank"
+          class="trigger-drop trigger-drop-e3686f"
+          ><ion-icon
+            class="icon-img"
+            src="../../../assets/icons/Sewing.svg"
+          ></ion-icon>
+          <span class="arena-text">Arena </span>Sewing</a
+        >
+      </li>
+      <li>
+        <a class="go-link" href="tel:(855) 462-7362">
+          <ion-icon class="telephone" color="primary" name="call"></ion-icon>
+          <span class="tel-number">(855) 462-7362</span></a
+        >
+      </li>
+    </ul>
+  </nav>
+</ion-header>

@@ -1,0 +1,81 @@
+$primary: #a7a7a8;
+$color-base: #fff;
+$color-text: #222;
+$color-accent: desaturate(navy, 80%);
+
+.flex {
+  display: inline-flex;
+
+  a {
+    cursor: pointer;
+    padding-right: 10px;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.icon {
+  line-height: 20px;
+  color: $primary;
+  font-size: 20px;
+}
+
+.icon-sm {
+  color: $primary;
+}
+
+.call {
+  font-size: 20px;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 20px;
+  width: 25px;
+  color: #a2a5ad;
+  margin-top: 5px;
+}
+
+.icon-lg {
+  font-size: 35px;
+  color: #a2a5ad;
+  width: 50px;
+  margin: 0 auto;
+}
+
+.fab {
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .icon {
+    font-size: 20px;
+    margin: 5px 5px 0;
+    color: #a2a5ad;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-text-left {
+    text-align: left;
+  }
+
+  .footer-text-right {
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 1230px) {
+  .ion-md-container {
+    margin: 0 auto;
+    width: 80%;
+    min-width: 768px;
+    max-width: 1440px;
+  }
+}
+
+a:hover {
+  color: $primary;
+}

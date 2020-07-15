@@ -1,0 +1,65 @@
+.invalid {
+  color: red;
+}
+
+.divider {
+  height: 1px;
+  background-color: gray;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.rainbow {
+  text-align: center;
+  background-image: url(./assets/images/hero-texture-small.png);
+  color: transparent;
+  -webkit-font-smoothing: antialiased;
+  background-clip: text;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-line-seight: 0.8;
+  -webkit-background-align: center;
+  background-size: auto 140px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.green {
+  color: #54b9a9 !important;
+}
+
+.yellow {
+  color: #eda346 !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.blue {
+  text-decoration: underline;
+  color: #3ebeaf !important;
+  &:hover {
+    color: #3e7abe !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ion-md-container {
+    width: 80%;
+    min-width: 768px;
+    max-width: 1440px;
+    margin: 50px auto;
+  }
+}

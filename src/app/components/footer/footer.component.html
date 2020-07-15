@@ -1,0 +1,221 @@
+<ion-grid class="ion-md-container ion-padding">
+  <ion-row class="ion-padding-top ion-margin b-bottom">
+    <ion-col class="ion-text-center" size="12" sizeMd="8" offsetMd="2">
+      <p class="call b-bottom ion-padding-bottom">
+        <ion-icon src="../../../assets/icons/Cloud.svg"></ion-icon>
+        Use our
+        <span
+          ><a href="javascript:;" (click)="openChat(chat)">Live Chat now</a> to
+          speak to a Sewing Specialist</span
+        >
+      </p>
+      <p class="call">
+        <ion-icon src="../../../assets/icons/tel.svg"></ion-icon>
+        Or call us today at
+        <span
+          ><a href="tel:(855) 462-7362">(855) 462-7362</a> or
+          <a href="tel:tel:(855) 462-7362">(855) GO ARENA</a></span
+        >
+      </p>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+<ion-grid class="ion-hide-sm-down  ion-md-container ion-padding">
+  <ion-row class="o-footer-nav b-bottom ion-margin-bottom">
+    <ion-col size="12" size-md="4">
+      <ul class="footer-widget footer-text-left">
+        <li class="flex">
+          <a (click)="navigate('home')">HOME</a>
+          <a (click)="navigate('about')">ABOUT US</a>
+          <a (click)="navigate('contact')">CONTACT</a>
+        </li>
+      </ul>
+    </ion-col>
+    <ion-col size="12" size-md="4"> </ion-col>
+
+    <ion-col size="12" size-md="4">
+      <ul class="footer-widget footer-text-right ion-text-right">
+        <li>
+          <span class="rights">
+            &copy; Arena. All Rights Reserved
+          </span>
+        </li>
+      </ul>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="ion-no-margin ion-no-padding">
+    <ion-col size="12">
+      <h4 class="ion-text-center ion-no-margin bold uppercase">Contact Us</h4>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="o-footer-nav ion-margin-bottom">
+    <ion-col class="ion-text-left" size="12" size-md="3">
+      <h4 class="bold">Address</h4>
+      <p class="ion-no-margin">
+        Arena Merchandising LLC,
+      </p>
+      <p class="ion-no-margin">
+        21330 North 2nd AVE, STE 2
+      </p>
+      <p class="ion-no-margin">
+        Phoenix, AZ 85027, USA
+      </p>
+
+      <a href="tel:602-357-3288">602-357-3288</a>
+    </ion-col>
+    <ion-col
+      class="border-right border-left ion-text-center"
+      size="12"
+      size-md="6"
+    >
+      <h4 class="bold">More</h4>
+      <p>Check out our other services.</p>
+      <ion-row class="ion-no-margin ion-no-padding">
+        <ion-col class="ion-no-padding">
+          <a href="javascript:;" class="underline" (click)="navigate('')"
+            >Prints</a
+          >
+        </ion-col>
+        <ion-col class="ion-no-padding">
+          <a href="javascript:;" class="underline" (click)="navigate('')"
+            >Embroidery</a
+          >
+        </ion-col>
+        <ion-col class="ion-no-padding">
+          <a href="javascript:;" class="underline" (click)="navigate('')"
+            >Music</a
+          >
+        </ion-col>
+        <ion-col class="ion-no-padding">
+          <a href="javascript:;" class="underline" (click)="navigate('')"
+            >Merch Store</a
+          >
+        </ion-col>
+      </ion-row>
+    </ion-col>
+
+    <ion-col size="12" class="ion-text-right" size-md="3">
+      <h4 class="bold">Connect</h4>
+      <p>Join us on social media.</p>
+      <i (click)="open(facebook)" class="fab icon fa-facebook"></i>
+      <i (click)="open(instagram)" class="fab icon fa-instagram"></i>
+      <i (click)="open(google)" class="fab icon fa-google"></i>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="b-top ion-padding-top">
+    <ion-col size="12" size-md="6">
+      <ul class="footer-widget footer-text-left">
+        <li class="flex">
+          <i class="fab icon-lg fa-cc-paypal"></i>
+          <i class="fab icon-lg fa-cc-visa"></i>
+          <i class="fab icon-lg fa-cc-mastercard"></i>
+        </li>
+      </ul>
+    </ion-col>
+    <ion-col size="12" size-md="6">
+      <ul class="footer-widget footer-text-right">
+        <li class="flex ">
+          <a (click)="navigate('terms')">TERMS OF SERVICE </a>
+          <a (click)="navigate('privacy')">PRIVACY POLICY</a>
+        </li>
+      </ul>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-grid class="ion-hide-md-up ion-md-container ion-padding">
+  <ion-row class="o-footer-nav ">
+    <ion-col size="12" size-md="4">
+      <ion-row class="ion-text-center">
+        <ion-col size="12" sizeSm="2">
+          <a (click)="navigate('home')">HOME</a>
+        </ion-col>
+        <ion-col size="12" sizeSm="2">
+          <a (click)="navigate('about')">ABOUT US</a>
+        </ion-col>
+        <ion-col size="12" sizeSm="2">
+          <a (click)="navigate('contact')">CONTACT</a>
+        </ion-col>
+        <ion-col size="12" sizeSm="3">
+          <a (click)="navigate('terms')">TERMS OF SERVICE </a>
+        </ion-col>
+        <ion-col size="12" sizeSm="3">
+          <a (click)="navigate('privacy')">PRIVACY POLICY </a>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="ion-text-center o-footer-nav ">
+    <ion-col size="12" size-md="4">
+      <h4 class="bold">Address</h4>
+      <p class="ion-no-margin">
+        Arena Merchandising LLC,
+      </p>
+      <p class="ion-no-margin">
+        21330 North 2nd AVE, STE 2
+      </p>
+      <p class="ion-no-margin">
+        Phoenix, AZ 85027, USA
+      </p>
+
+      <a href="tel:602-357-3288">602-357-3288</a>
+    </ion-col>
+
+    <ion-col size="12" size-md="4">
+      <h4 class="bold">More</h4>
+      <p>Check out our other services.</p>
+      <ion-row class="ion-no-margin ion-no-padding">
+        <ion-col size="12" sizeSm="3">
+          <a href="javascript:;" class="underline" (click)="navigate('')"
+            >Prints</a
+          >
+        </ion-col>
+        <ion-col size="12" sizeSm="3">
+          <a href="javascript:;" class="underline" (click)="navigate('')"
+            >Embroidery</a
+          >
+        </ion-col>
+        <ion-col size="12" sizeSm="3">
+          <a href="javascript:;" class="underline" (click)="navigate('')"
+            >Music</a
+          >
+        </ion-col>
+        <ion-col size="12" sizeSm="3">
+          <a href="javascript:;" class="underline" (click)="navigate('')"
+            >Merch Store</a
+          >
+        </ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-col size="12" size-md="4">
+      <h4 class="bold">Connect</h4>
+      <p>Join us on social media.</p>
+      <i (click)="open(facebook)" class="fab icon fa-facebook"></i>
+      <i (click)="open(instagram)" class="fab icon fa-instagram"></i>
+      <i (click)="open(google)" class="fab icon fa-google"></i>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="b-top ion-text-center">
+    <ion-col size="12" size-md="6">
+      <div class="cards">
+        <i class="fab icon-lg fa-cc-paypal"></i>
+        <i class="fab icon-lg fa-cc-visa"></i>
+        <i class="fab icon-lg fa-cc-mastercard"></i>
+      </div>
+    </ion-col>
+    <ion-col size="12" size-md="6">
+      <ul class="footer-widget">
+        <span class="rights">
+          &copy; Arena All Rights Reserved
+        </span>
+      </ul>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<app-chat #chat></app-chat>

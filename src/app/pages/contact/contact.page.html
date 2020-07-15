@@ -1,0 +1,138 @@
+<ion-content>
+  <app-header></app-header>
+  <ion-grid
+    class="ion-margin-bottom ion-padding-bottom b-bottom  ion-custom-container"
+  >
+    <app-title [title]="title"></app-title>
+
+    <ion-row class="ion-md-container ion-padding">
+      <p>
+        We are available by phone and live chat during normal business hours.
+        Send us a message anytime using the form below.
+      </p>
+      <br />
+      <p>
+        This customer service is for questions about items purchased directly
+        through arena.com and shop.arena.com. For questions about items
+        purchased through a third-party company, please contact the specific
+        vendor directly. Third-party sellers handle customer service for Arena
+        items purchased through their companies internally.
+      </p>
+
+      <ion-col size="12" sizeMd="6">
+        <div>
+          <img src="../../../assets/images/contact.webp" alt="" />
+        </div>
+      </ion-col>
+      <ion-col class="ion-md-padding" size="12" sizeMd="6">
+        <form [formGroup]="form" (ngSubmit)="onSubmit(form)">
+          <div class="form-input">
+            <ion-label>First Name<span>*</span></ion-label>
+            <ion-input
+              name="firstName"
+              formControlName="firstName"
+              class="ion-no-padding border-bottom"
+              type="text"
+            ></ion-input>
+            <p class="invalid" *ngIf="firstName.invalid &&  submitted">
+              First Name is required.
+            </p>
+          </div>
+          <div class="form-input">
+            <ion-label>Last Name<span>*</span></ion-label>
+            <ion-input
+              name="lastName"
+              formControlName="lastName"
+              class="ion-no-padding border-bottom"
+              type="text"
+            ></ion-input>
+            <p class="invalid" *ngIf="lastName.invalid && submitted">
+              Last Name is required.
+            </p>
+          </div>
+          <div class="form-input">
+            <ion-label>Email<span>*</span></ion-label>
+            <ion-input
+              name="email"
+              formControlName="email"
+              pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{1,}[.]{1}[a-zA-Z]{2,}"
+              class="ion-no-padding border-bottom"
+              type="email"
+            ></ion-input>
+            <p class="invalid" *ngIf="email.invalid && submitted">
+              Email is required.
+            </p>
+          </div>
+          <div class="form-input">
+            <ion-label>Phone Number</ion-label>
+            <ion-input
+              name="phone"
+              formControlName="phone"
+              class="ion-no-padding border-bottom"
+              type="text"
+            ></ion-input>
+          </div>
+          <div class="form-input">
+            <ion-label>Order Number</ion-label>
+            <ion-input
+              name="orderNumber"
+              formControlName="orderNumber"
+              class="ion-no-padding border-bottom"
+              type="text"
+            ></ion-input>
+          </div>
+          <div class="form-input">
+            <ion-label>Subject</ion-label>
+            <ion-input
+              name="subject"
+              formControlName="subject"
+              class="ion-no-padding border-bottom"
+              type="text"
+            ></ion-input>
+          </div>
+          <div class="form-input">
+            <ion-label>Comment</ion-label>
+            <ion-textarea
+              id="comment"
+              name="comment"
+              formControlName="comment"
+              class="border-top border-left border-right border-bottom"
+              rows="6"
+              cols="20"
+            ></ion-textarea>
+          </div>
+          <div class="form-input">
+            <ion-button type="submit">Send</ion-button>
+          </div>
+        </form>
+      </ion-col>
+    </ion-row>
+
+    <div class="divider"></div>
+
+    <ion-row class="ion-md-container ion-padding">
+      <ion-col class="chat-box" size="12" offsetMd="1" sizeMd="4">
+        <h4>Let's Start A Chat</h4>
+        <p>
+          An Arena Specialist is waiting to answer your questions. If we are
+          unavailable in the evening hours, please leave your contact info and
+          we will get back to you ASAP.
+        </p>
+        <ion-button (click)="openChat(chat)">START A LIVE CHAT</ion-button>
+      </ion-col>
+      <ion-col size="12" offsetMd="2" sizeMd="4">
+        <h4>Give Us A Call</h4>
+        <p>
+          (855) GO-ARENA / (855) 462-7362 <br />
+          M-F 8 am-5:00 pm MST <br />
+          Or reach us by email:
+          <a (click)="navigate('contact')">support@arena.com</a>
+        </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <app-footer></app-footer>
+
+  <app-chat #chat></app-chat>
+</ion-content>

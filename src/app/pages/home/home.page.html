@@ -1,0 +1,103 @@
+<ion-content>
+  <app-header></app-header>
+  <app-slider></app-slider>
+  <app-title [title]="title" [isUppercase]="true"></app-title>
+  <ion-grid class="ion-text-center ion-md-container">
+    <ion-row class="custom-padding">
+      <ion-col
+        class="pointer"
+        (click)="open(item.url)"
+        *ngFor="let item of sites"
+        size="12"
+        size-md="6"
+      >
+        <ion-card class="ion-text-center">
+          <ion-card-header>
+            <ion-icon
+              class="icon green"
+              src="../../../assets/icons/{{ item.icon }}.svg"
+              *ngIf="item.icon === 'Embroidery'"
+            >
+            </ion-icon>
+
+            <ion-icon
+              class="icon yellow"
+              src="../../../assets/icons/{{ item.icon }}.svg"
+              *ngIf="item.icon === 'SB'"
+            >
+            </ion-icon>
+            <ion-icon
+              *ngIf="item.icon !== 'Embroidery' && item.icon !== 'SB'"
+              class="icon"
+              src="../../../assets/icons/{{ item.icon }}.svg"
+            >
+            </ion-icon>
+            <ion-card-title>
+              <h4>{{ item.title }}</h4>
+            </ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            <p class="desc" title="{{ item.description }}">
+              {{ item.description.length > 200 ? (item.description | slice:
+              0:200) + "..." : item.description }}
+            </p>
+            <button
+              class="custon-btn"
+              [ngStyle]="{
+                'color': item.color,
+                'border-color': item.color
+              }"
+            >
+              Enter {{ item.title}}
+            </button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid
+    class="ion-margin-bottom ion-padding-bottom b-bottom ion-text-center ion-custom-container"
+  >
+    <ion-card-title class="ion-text-center header-font"
+      ><h3>
+        WHY ARENA IS BETTER
+      </h3></ion-card-title
+    >
+    <ion-row class="ion-md-container">
+      <ion-col
+        class="card-col pointer"
+        *ngFor="let item of items"
+        size="12"
+        sizeSm="4"
+        sizeMd="4"
+      >
+        <ion-card class="ion-text-center">
+          <ion-card-header>
+            <h1>
+              <i class="{{ item.icon }} icon-sz"></i>
+            </h1>
+            <ion-card-title class="rainbow">
+              <h4>{{ item.title }}</h4>
+            </ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            <p class="desc-2">
+              {{ item.description }}
+            </p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <app-testimonials></app-testimonials>
+
+  <app-subscription></app-subscription>
+
+  <app-footer></app-footer>
+
+  <app-chat></app-chat>
+</ion-content>

@@ -1,0 +1,19 @@
+h5,
+ul {
+  width: 100%;
+}
+
+.no-bullet {
+  list-style-type: none;
+}
+
+h6,
+p {
+  width: 100%;
+}
+
+@media screen and(min-width: 1316px ) {
+  ion-grid {
+    margin-top: 80px;
+  }
+}

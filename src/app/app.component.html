@@ -1,0 +1,55 @@
+<ion-app>
+  <ion-menu contentId="content1" side="end">
+    <ion-header>
+      <ion-title>
+        <a href="tel: (855) 462-7362" class="go-link">
+          <i class="fal fa-phone-alt"></i>
+          (855) 462-7362</a
+        >
+      </ion-title>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item (click)="navigate('home', 'content1')">
+          Home
+        </ion-item>
+        <ion-item (click)="navigate('about', 'content1')">
+          About
+        </ion-item>
+
+        <ion-item (click)="navigate('contact', 'content1')">
+          Contact
+        </ion-item>
+      </ion-list>
+      <ion-list>
+        <ion-item
+          *ngFor="let page of pages"
+          (click)="open(page.url)"
+          lines="none"
+        >
+          <ion-icon
+            class="icon green"
+            src="../../../assets/icons/{{ page.icon }}.svg"
+            *ngIf="page.icon === 'Embroidery'"
+          >
+          </ion-icon>
+
+          <ion-icon
+            class="icon yellow"
+            src="../../../assets/icons/{{ page.icon }}.svg"
+            *ngIf="page.icon === 'SB'"
+          >
+          </ion-icon>
+          <ion-icon
+            *ngIf="page.icon !== 'Embroidery' && page.icon !== 'SB'"
+            class="icon"
+            src="../../../assets/icons/{{ page.icon }}.svg"
+          >
+          </ion-icon>
+          {{ page.title }}
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="content1"></ion-router-outlet>
+</ion-app>
